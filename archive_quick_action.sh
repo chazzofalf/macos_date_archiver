@@ -126,7 +126,9 @@ def trash_path(target):
 
 def main():
     args = parse_arguments()
-    temp_folder, zip_file = timestamped_names(args.base)
+    temp_folder, zip_name = timestamped_names(args.base)
+    output_dir = os.path.abspath(os.path.dirname(args.paths[0]))
+    zip_file = os.path.join(output_dir, zip_name)
 
     move_items_to_folder(temp_folder, args.paths)
     run_ditto(temp_folder, zip_file)

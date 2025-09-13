@@ -64,3 +64,5 @@ open archive_quick_action.sh
 ```
 
 You can now follow the **Quick Action Installation** steps above.
+
+**Note:** The archive is created in the same directory as the first selected item (the parent folder of the first file/folder you right‑click). This ensures the archive works correctly even when invoked from your home folder or any other location.
